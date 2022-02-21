@@ -1,8 +1,8 @@
-### How to test
+## How to test
 
-*Install ruby*
+- [ ] [Install ruby](https://www.ruby-lang.org/en/documentation/installation/)
 
-*Generate CSV file first*
+### Generate CSV file first
 
 below command will generate `data.csv` file with 1,000,000 records
 
@@ -17,7 +17,7 @@ You will see 2 useful information for each method
 - Time it consumed to read whole CSV records 
 - more importantly *Memory* it consumed to process above request.
 
-*Check benchmark of `CSV.read` method
+**Check benchmark of `CSV.read` method**
 
 ```ruby
 > ruby csv_read.rb
@@ -26,7 +26,7 @@ Time: 11.74
 Memory: 1887.02 MB
 ```
 
-*Check benchmark of `CSV.parse` method
+**Check benchmark of `CSV.parse` method**
 
 ```ruby
 > ruby csv_parse.rb
@@ -35,7 +35,7 @@ Time: 9.68
 Memory: 2193.36 MB
 ```
 
-*Check benchmark of `CSV.for_each` method
+**Check benchmark of `CSV.for_each` method**
 
 ```ruby
 > ruby csv_for_each.rb
